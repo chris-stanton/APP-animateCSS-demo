@@ -2,11 +2,15 @@
   1. HTML
   2. CSS
   3. Javascript
-  4. Angular ``` v1.6.3 ```
+  4. Angular
 
 ## How To Install App
   1. Fork or download zip file
   2. Open index.html file in browser
+
+---
+
+#### App can be viewed at: https://animate-css.herokuapp.com/
 
 ---
 
