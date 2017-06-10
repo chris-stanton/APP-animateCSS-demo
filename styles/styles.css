@@ -1,0 +1,30 @@
+
+body {
+  text-align: center;
+}
+
+#mainHeading {
+  font-size: 40px;
+}
+
+#animationContainer {
+  font-size: 70px;
+  /*text-shadow: 4px 2px grey;*/
+  margin: 180px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+#controlls {
+  margin-left: 390px;
+  /*position: fixed;*/
+}
+
+#infiniteLabel {
+  /*margin: 15px;*/
+}
+
+.controllsTd {
+  text-align: center;
+  margin: 20px;
+}

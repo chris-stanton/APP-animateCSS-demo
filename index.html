@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Animate CSS Demo </title>
+      <script src="./vendors/angular.min.js" charset="utf-8"></script>
+      <script src="./scripts/client.js" charset="utf-8"></script>
+        <link type="text/css" rel="stylesheet" href="./styles/styles.css">
+        <link type="text/css" rel="stylesheet" href="./vendors/animate.css">
+  </head>
+  <body ng-app="AngularApp" ng-controller="MainController as mc">
+
+    <div>
+      <h1 id="mainHeading"> Animate CSS Demo </h1>
+    </div>
+
+      <div id="animationContainer">
+        <div ng-show="mc.infinite === true" class="animated infinite {{mc.animation.animation}}"><font color='{{mc.font.color}}'> ANIMATE CSS </font></div>
+        <div ng-show="mc.infinite !== true" class="animated {{mc.animation.animation}}"><font color='{{mc.font.color}}'> ANIMATE CSS </font></div>
+      </div>
+
+      <div id="controlls">
+        <table>
+          <tr>
+            <td>
+              <div class="controllsTd">
+                <input type="color" ng-model="mc.font.color">
+              </div>
+            </td>
+            <td>
+              <div class="controllsTd">
+                <select ng-model="mc.animation.animation">
+                  <option ng-repeat="animation in mc.animatecss" value="{{animation.animation}}"> {{animation.name}} </option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="controllsTd">
+                <div id="infiniteLabel">
+                  <label ng-show="mc.infinite === true"> Infinite Active </label>
+                  <label ng-show="mc.infinite !== true"> Infinite Disabled </label>
+                </div>
+                <div>
+                  <input type="checkbox"  ng-model="mc.infinite" value="infinite">
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+  </body>
+</html>
