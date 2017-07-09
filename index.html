@@ -24,14 +24,16 @@
           <tr>
             <td>
               <div class="controllsTd">
-                <input type="color" ng-model="mc.font.color">
+                <label> Text Color </label><br/>
+                  <input type="color" ng-model="mc.font.color">
               </div>
             </td>
             <td>
               <div class="controllsTd">
-                <select ng-model="mc.animation.animation">
-                  <option ng-repeat="animation in mc.animatecss" value="{{animation.animation}}"> {{animation.name}} </option>
-                </select>
+                <label> Animation </label><br/>
+                  <select ng-model="mc.animation.animation">
+                    <option ng-repeat="animation in mc.animatecss" value="{{animation.animation}}"> {{animation.name}} </option>
+                  </select>
               </div>
             </td>
             <td>
