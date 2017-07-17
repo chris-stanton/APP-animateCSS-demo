@@ -1,8 +1,22 @@
+
+# Animate CSS Demo
+
+---
+
+## Description
+###### Animate CSS library application where a user can select from all Animate CSS animations for an instant animation example and have control of infinite loop and text color options.
+
+<img src="./images/screenshots/main.png" width="50%">
+
+---
+
 ## Technologies Used
   1. HTML
   2. CSS
   3. Javascript
   4. Angular
+
+---
 
 ## How To Install App
   1. Fork or download zip file
